@@ -28,7 +28,6 @@ public class SalesService {
     public String theWorstSeller(List<Sales> salesList){
         String worstSalesman = "Não há um pior vendedor";
         Map<String, Double> salesBySalesman = new HashMap<>();
-        String saleMostExpensive;
         double saleValue=0;
         for( Sales sales : salesList){
             saleValue = calculateSale(sales.getItems());
@@ -36,6 +35,7 @@ public class SalesService {
         }
         for (Map.Entry<String, Double> entry : salesBySalesman.entrySet()){
             if (comparator>entry.getValue()){
+                comparator = entry.getValue();
                 worstSalesman= entry.getKey();
             }
         }

@@ -8,4 +8,8 @@ public class Customer {
       this.name = name;
       this.businessArea = businessArea;
    }
+
+   public String getName() {
+      return name;
+   }
 }

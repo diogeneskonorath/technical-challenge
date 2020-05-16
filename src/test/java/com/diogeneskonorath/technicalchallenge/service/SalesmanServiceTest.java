@@ -19,6 +19,6 @@ public class SalesmanServiceTest {
     public void countsNumberOfCustomersTest(){
         salesmenList.add(salesman);
         salesmenList.add(salesman2);
-        assertEquals("Número de vendedor es: 2", salesmanService.countNumberOfSalesman(salesmenList));
+        assertEquals("Número de vendedores: 2", salesmanService.countNumberOfSalesman(salesmenList));
     }
 }
